@@ -1,0 +1,193 @@
+*{
+    font-family: "Font1";
+}
+
+body{
+    margin: 0;
+    background: url("/images/stages/stage3.gif") no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    background-color: #301934;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+nav ul li {
+    margin-right: 20px;
+    transition: ease-in-out;
+    transition-duration: 200ms;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+}
+
+nav ul li:hover{
+    transform: skewY(4deg);
+    text-shadow: black 6px 6px;
+}
+
+.options{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#bot{
+    color: #fff;
+    font-size: 32px;
+    background: #7b4185;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: hover 0.4s ease;
+    border: none;
+    width: 20vw;
+    height: 10vh;
+    margin: 20px;
+}
+
+#bot:hover{
+    background: #3c1f41;
+}
+
+#friend:hover{
+    background: #3c1f41;
+}
+
+#back{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    color: #fff;
+    font-size: 32px;
+    background: #7b4185;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: hover 0.4s ease;
+    border: none;
+    width: 5vw;
+    height: 5vh;
+    margin: 20px;
+    visibility: hidden;
+}
+
+#back:hover{
+    background: #3c1f41;
+}
+
+#friend{
+    color: #fff;
+    font-size: 32px;
+    background: #7b4185;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: hover 0.4s ease;
+    border: none;
+    width: 20vw;
+    height: 10vh;
+    margin: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 150px;
+    background-color: #3c1f41;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    box-shadow: black 5px 5px;
+    transition: ease-in-out;
+    transition-duration: 100ms;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.character-choice{
+    display: none;
+    height: 75vh;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.choice-btn{
+    background: none;
+    border: none;
+}
+
+.team{
+    color:white;
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: black 5px 5px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+#link{
+    font-size: 24px;
+    color: #333;
+    background: white;
+}
+
+.link-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.link-container h2{
+    color: white;
+    text-shadow: 5px 5px black;
+}
+
+#cpy{
+    background-color: black;
+    font-size: 32px;
+    color: white;
+    border: none;
+    transition-duration: 100ms;
+}
+
+#cpy:hover{
+    box-shadow: 5px 5px red;
+}
+
+@font-face {
+    font-family: "Font1";
+    src: url("../fonts/font1.ttf");
+}
+@font-face {
+    font-family: "Font2";
+    src: url("../fonts/doomed.ttf");
+}

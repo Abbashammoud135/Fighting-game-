@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/News.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <title>NEWS</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+
+
+
+<audio hidden="true" controls autoplay>
+    <source src="/audio/start_fight_music.mp3" type="audio/mpeg">
+</audio>
+    <div class="first">
+        <nav>
+            <ul class="navitems">
+                <li> <a href="/menu"> <button class="button-82-pushable" role="button">
+                            <span class="button-82-shadow"></span>
+                            <span class="button-82-edge"></span>
+                            <span class="button-82-front text">
+                                BACK
+                            </span>
+                        </button></a></li>
+                <li> <a href="/news"><button id="b1" class="b1" onclick="appear('b1')"> NEWS </button></a> </li>
+                <li> <a href="/scores/0"><button id="b2" class="b2" onclick="appear('b2')">SCORES </button></a> </li>
+            </ul>
+        </nav>
+
+        <div class="welcome">
+            <h1 id="change">ARE YOU READY TO CHECK OUR NEWS</h1>
+        </div>
+
+        <div class="yesno">
+            <button id="yes" onclick="scrolldown(752)">YES</button>
+            <button id="yes1" onclick="change()">NO</button>
+            <a href="/scores/0" class="link-button"><button id="no">SCORE</button></a>
+            <a href="/menu" class="link-button"><button id="no1">MENU</button></a>
+
+        </div>
+    </div>
+    <div class="second">
+        <img src="/images/fire.gif" alt="">
+        <h1>RELEASED GAME</h1> <br>
+        <p>On this monumental day, we invite you to join us in celebrating the launch of <b>'Grip of Death.'</b> Feel
+            the rush of adrenaline as you embark on an epic journey of skill, strategy, and triumph. This is your chance
+            to prove your mettle, dominate the arena, and leave your mark in gaming history.</p>
+
+    </div>
+    <div class="whats-new-section">
+        <div class="new">
+            <h1 class="section-title">What's Coming Soon?</h1>
+        </div><br><br>
+        <h2 class="section-title">New Characters Is Coming Soon!</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="/images/image1.png" alt="Image 1">
+                <h3>Geese Howard</h3>
+                <p>Geese Howard (ギース・ハワード) is the chief, boss and main antagonist of the Fatal Fury series and a
+                    secondary villain in the Art of Fighting series. His role varies in the The King of Fighters
+                    storyline, but he is always either in the position of a villain or an anti-hero. His nickname is
+                    Charismatic Evil (カリスマ的てきな悪わる).He appears to show respect to Tung Fu Rue despite their histories,
+                    even if he is sometimes sarcastic about it, as seen in Neo Geo Battle Coliseum, and more recently in
+                    The King of Fighters XIV.</p>
+            </div>
+
+            <div class="card">
+                <img src="/images/image2.png" alt="Image 2">
+                <h3>Asuka' Kazama</h3>
+                <p>MAsuka Kazama is a fighter in the Tekken series. She is the distant relative of Jin Kazama, and uses
+                    the Kazama Ancient Martial Arts fighting style.She was taught Kazama-style Traditional Martial Arts
+                    by her father, a dojo-master near Osaka, ever since she was a small girl. By nature, she believes
+                    very strongly in justice and devotes much of her free time playing vigilante, breaking up nearby
+                    gang fights by force. She makes her first appearance in Tekken 5, introduced as a seventeen-year old
+                    high school student.</p>
+            </div>
+
+            <div class="card">
+                <img src="/images/image3.png" alt="Image 3">
+                <h3>Kazuya Mishima</h3>
+                <p>Kazuya Mishima (Japanese: 三島 一八, Hepburn: Mishima Kazuya) is a character in Bandai Namco's Tekken
+                    fighting game series, first featured as the protagonist in the original 1994 game and later became
+                    one of the major antagonists and antihero of the series. The son of worldwide conglomerate Mishima
+                    Zaibatsu CEO Heihachi Mishima, Kazuya seeks revenge against his father for throwing him off a cliff
+                    years earlier. Kazuya becomes corrupted in later games, seeking to obtain more power and later
+                    eventually comes into conflict with his son Jin Kazama.</p>
+            </div>
+        </div>
+        <br> <br>
+        <h2 class="section-title">New Arenas To Fight</h2>
+        <br><br>
+        <div class="grid-container">
+            <div class="grid-item item1"><img src="/images/img1.jpg" alt="" srcset=""></div>
+            <div class="grid-item"><img src="/images/img2.jpg" alt="" srcset=""></div>
+            <div class="grid-item "><img src="/images/img4.jpg" alt="" srcset=""></div>
+        </div>
+
+        <br> <br>
+        <h2 class="section-title">New Powers!</h2>
+        <br><br>
+        <div class="grid-container">
+            <div class="grid-item1 item1"><video class="vid" src="/audio/power1.mp4" muted autoplay loop></video></div>
+            <div class="grid-item1 item2"><video class="vid" src="/audio/power2.mp4" muted autoplay loop></video></div>
+        </div>
+    </div>
+    <div class="history">
+        <h1>Now You Need To Pass These Two challenges <br>Inorder To check the History of Games </h1> <br><br><br>
+        <div class="game1">
+            <h2>FIRST GAME</h2>
+            <HR>
+            </HR> <br><br>
+            <p> 1. find the solution of this equation</p> <br>
+            <p id="a"></p>
+            <br>
+            <p> 2. Enter the absolute value of the solution</p>
+            <input type="text" name="" id="in">
+            <button id="submit" onclick="function1()">submit</button> <br><br>
+            <p id="true"></p>
+
+
+        </div>
+        <div class="game2">
+            <h2>SECOND GAME</h2>
+            <HR>
+            </HR> <br><br>
+            <p>1. Guess a number from 1 to 10</p> <br>
+            <input type="text" id="inpp">
+            <button id="s1" class="b2">submit</button> <br>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-icons">
+                <a href="/contact"><i class="fas fa-envelope"></i>Contact Us</a>
+                <a href="/services"><i class="fas fa-cogs"></i>Services</a>
+                <a href="/about"><i class="fas fa-info-circle"></i>About Us</a>
+            </div>
+            <p>&copy; 2023 Your News Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+<script src="/js/News.js"></script>
+
+</html>

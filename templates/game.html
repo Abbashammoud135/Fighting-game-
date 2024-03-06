@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="/css/game_css.css">
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul id='Items'>
+                <li><a href='/logout'>Logout</a></li>
+                <li><a href='/news'>News</a></li>
+                <li><a href='/menu'>Menu</a></li>
+                <li><a href='/scores/0'>High-scores</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="messageContainer">
+        <h1 class="message">Fight!!</h1>
+    </div>
+    <canvas id="canvas1"></canvas>
+    <p id="controls">A: Left / D: Right / L: Attack / Block(2s): k / Space: Jump</p>
+    <button id="replay">Fight Again!</button>
+
+    <p style="display: none;" th:text="${gameId}" id="gameId"></p>
+    <p style="display: none;" th:text="${choice}" id="choice"></p>
+    <p style="display: none;" th:text="${username}" id="username"></p>
+    <audio hidden="true" id="fatality">
+        <source src="/audio/fatality.mp3" type="audio/mpeg">
+    </audio>
+    <audio hidden="true" id="fight">
+        <source src="/audio/fight.mp3" type="audio/mpeg">
+    </audio>
+    <audio hidden="true" id="punch">
+        <source src="/audio/Punch.mp3" type="audio/mpeg">
+    </audio>
+    <audio hidden="true" id="punch2">
+        <source src="/audio/punch2.mp3" type="audio/mpeg">
+    </audio>
+    <audio hidden="true" id="ko">
+        <source src="/audio/ko.mp3" type="audio/mpeg">
+    </audio>
+    <audio hidden="true" id="music1" loop>
+        <source src="/audio/music1.mp3" type="audio/mpeg">
+    </audio>
+    <audio hidden="true" id="music2" loop>
+        <source src="/audio/music2.mp3" type="audio/mpeg">
+    </audio>
+    <audio hidden="true" id="music3" loop>
+        <source src="/audio/music3.mp3" type="audio/mpeg">
+    </audio>
+    <script src="/js/script.js" type="module"></script>
+</body>
+</html>

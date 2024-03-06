@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link href="/css/menu_css.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+<div class="navbar">
+  <nav>
+    <ul id='Items'>
+      <li><a href='/logout'>Logout</a></li>
+      <li><a href='/news'>News</a></li>
+      <li><a href='/scores/0'>High-scores</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="options">
+    <button id="bot">Offline 2 players</button>
+    <button id="friend">Play online with a guest</button>
+</div>
+<button id="back">Back</button>
+<div class="character-choice" id="display">
+    <div>
+        <h1 class="team">Hero</h1>
+        <div class="heroes container">
+            <button class="choice-btn hero" id="0">
+                <div class="card">
+                    <img src="/images/faces/face1.png">
+                    <h3>Ryu</h3>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div>
+        <h1 class="team">Villian</h1>
+        <div class="villians container">
+            <button class="choice-btn villain" id="1">
+                <div class="card">
+                    <img src="/images/faces/face2.png">
+                    <h3>Ryu</h3>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+<audio hidden="true" controls autoplay>
+    <source src="/audio/start_fight_music.mp3" type="audio/mpeg">
+</audio>
+<div class="link-container">
+    <h2>Send this link to your friend to start game</h2>
+    <h3 id="link"></h3>
+    <button id="cpy">Copy to Clipboard!</button>
+    <h3 style="color: white;">Starting in <span id="timer"></span> seconds</h3>
+</div>
+<p  style="display:none;" th:text="${username}" id="username"></p>
+<script src="/js/menu.js"></script>
+
+</body>
+</html>

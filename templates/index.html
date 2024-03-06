@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grip of Death</title>
+    <link rel="stylesheet" th:href = "@{/css/login_css.css}">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+<div class="navbar">
+    <nav>
+        <ul id='Items'>
+            <li><a href='/about'>About Us</a></li>
+            <li><a href='/services'>Services</a></li>
+            <li><a href='/contact'>Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="all">
+    <div class="container"> <!-- all the box -->
+        <input type="checkbox" id="flip">
+        <div class="cover">  <!-- cover image -->
+            <div class="front"> <!-- front image -->
+                <img src="./images/Screenshot.png">
+                <div class="text">
+                    <span class="text-1">Welcome to <br> <span id="title">Grip of Death</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Login</div>
+                    <form action="/login" method="GET">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <img src="./images/email.png" class="icon">
+                                <input name="email" type="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                                <img src="./images/key.png" class="icon">
+                                <input name="password" type="password" placeholder="Enter your password" required>
+                            </div>
+                            <p th:text="${loginStatus}" class="message"> Login Status </p>
+                            <div class="button input-box">
+                                <input type="submit" value="Login">
+                            </div>
+                            <div class="text sign-up-text">Don't have an account? <label for="flip">Register now</label></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-form">
+                    <div class="title">Register</div>
+                    <form action="/register" method="POST">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <img src="./images/user.png" class="icon">
+                                <input name="username" type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-box">
+                                <img src="./images/email.png" class="icon">
+                                <input name="email" type="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                                <img src="./images/key.png" class="icon">
+                                <input name="password" type="password" placeholder="Enter a password" minlength="8" required>
+                            </div>
+                            <div class="button input-box">
+                                <input type="submit" value="Register">
+                            </div>
+                            <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

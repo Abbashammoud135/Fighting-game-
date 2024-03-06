@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/score.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>SCORES</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+<audio hidden="true" controls autoplay>
+    <source src="/audio/start_fight_music.mp3" type="audio/mpeg">
+</audio>
+    <div class="first">
+        <nav>
+            <ul class="navitems">
+                <li> <a href="/news"> <button class="button-82-pushable" role="button">
+                            <span class="button-82-shadow"></span>
+                            <span class="button-82-edge"></span>
+                            <span class="button-82-front text">
+                                BACK
+                            </span>
+                        </button></a></li>
+                <li> <a href="/news"><button id="b1" class="b1" onclick="appear('b1')"> NEWS </button></a> </li>
+                <li> <a href="/scores/0"><button id="b2" class="b2" onclick="appear('b2')">SCORES </button></a> </li>
+            </ul>
+        </nav>
+
+        <div class="welcome">
+            <h1 id="change">ARE YOU READY TO CHECK THE RANKS</h1>
+        </div>
+
+        <div class="yesno">
+            <button id="yes" onclick="scrolldown(752)">YES</button>
+            <button id="yes1" onclick="change()">NO</button>
+            <a href="/news" class="link-button"><button id="no">NEWS</button></a>
+            <a href="/menu" class="link-button"><button id="no1">MENU</button></a>
+
+        </div>
+    </div>
+      <header>
+        <h1>High Scores</h1>
+      </header>
+      <table id="myTable">
+        <tr>
+          <th>Rank</th>
+          <th>Player Name</th>
+          <th>Score</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td><span class="pixel-art" th:text="${name1}"></span></td>
+          <td id="score1" th:text="${score1}"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><span class="pixel-art" th:text="${name2}"></span></td>
+          <td id="score2" th:text="${score2}"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><span class="pixel-art" th:text="${name3}"></span></td>
+          <td id="score3" th:text="${score3}"></td>
+        </tr>
+          <tr>
+              <td></td>
+              <td><span class="pixel-art" th:text="${name4}"></span></td>
+              <td th:text="${score4}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><span class="pixel-art" th:text="${name5}"></span></td>
+              <td th:text="${score5}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><span class="pixel-art" th:text="${name6}"></span></td>
+              <td th:text="${score6}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><span class="pixel-art" th:text="${name7}"></span></td>
+              <td th:text="${score7}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><span class="pixel-art" th:text="${name8}"></span></td>
+              <td th:text="${score8}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><span class="pixel-art" th:text="${name9}"></span></td>
+              <td th:text="${score9}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><span class="pixel-art" th:text="${name10}"></span></td>
+              <td th:text="${score10}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><span class="pixel-art" th:text="${name11}"></span></td>
+              <td th:text="${score11}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><span class="pixel-art" th:text="${name12}"></span></td>
+              <td th:text="${score12}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><span class="pixel-art" th:text="${name13}"></span></td>
+              <td th:text="${score13}"></td>
+          </tr>
+      </table>
+        <div id="next">
+            <a id="previous-page">Previous page</a>
+            <a id="next-page">Next page</a>
+        </div>
+
+
+
+      <footer>
+        <div class="container">
+            <div class="footer-icons">
+                <a href="/contact"><i class="fas fa-envelope"></i>Contact Us</a>
+                <a href="/services"><i class="fas fa-cogs"></i>Services</a>
+                <a href="/about"><i class="fas fa-info-circle"></i>About Us</a>
+            </div>
+            <p>&copy; 2023 Your News Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+<script src="/js/score.js"></script>
+
+</html>
